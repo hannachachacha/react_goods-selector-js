@@ -35,7 +35,11 @@ export const App = () => {
         <tbody>
           {goods.map(good =>
             good === selectedGood ? (
-              <tr data-cy="Good" className="has-background-success-light">
+              <tr
+                data-cy="Good"
+                className="has-background-success-light"
+                key={good}
+              >
                 <td>
                   <button
                     data-cy="RemoveButton"
